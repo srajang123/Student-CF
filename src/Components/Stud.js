@@ -1,5 +1,7 @@
 import React, { useEffect,useState } from 'react';
 import axios from 'axios';
+import '../styles/Stud.css';
+
 function Stud({Data}){
     const [total,UpdateTotal]=useState(0);
     const [rating,UpdateRating]=useState(0);
@@ -31,8 +33,8 @@ function Stud({Data}){
     if(mydata)
     {
         return (
-            <div>
-                <div className="view">
+            <div class='stud'>
+                <div className="view-stud">
                     <table>
                         <tbody>
                             <tr>
@@ -47,14 +49,18 @@ function Stud({Data}){
                                 <th>Gender</th>
                                 <td>{mydata.gender === 'm' ? 'Male' : 'Female'}</td>
                             </tr>
+                            <tr>
+                                <th>Total Questions Solved</th>
+                                <td>{total}</td>
+                            </tr>
+                            <tr>
+                                <th>Current Rating</th>
+                                <td>{rating}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <div className='fetch-cf'>
-                    <div className='summary'>
-                        <h3>Total Questions Solved: {total}</h3>
-                        <h3>Current Rating: {rating}</h3>
-                    </div>
                     <div className='submissions'>
                         <table>
                             <thead>

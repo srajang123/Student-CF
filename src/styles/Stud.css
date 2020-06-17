@@ -1,0 +1,42 @@
+.stud .view-stud table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.stud .view-stud table tr:nth-child(odd) th {
+  background-color: #90a3b5;
+}
+.stud .view-stud table tr:nth-child(odd) td {
+  background-color: #cbd6e0;
+}
+.stud .view-stud table tr:nth-child(even) td {
+  background-color: #90a3b5;
+}
+.stud .view-stud table tr:nth-child(even) th {
+  background-color: #cbd6e0;
+}
+.stud .view-stud table tr {
+  font-size: 3vh;
+}
+.stud .view-stud table tr th {
+  width: 50%;
+}
+.stud .fetch-cf .submissions table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2%;
+}
+.stud .fetch-cf .submissions table thead tr {
+  font-size: 3vh;
+  background-color: #2545cf;
+}
+.stud .fetch-cf .submissions table tbody tr:nth-child(odd) {
+  background-color: #afbfcf;
+}
+.stud .fetch-cf .submissions table tbody tr:nth-child(even) {
+  background-color: #8595af;
+}
+.stud .fetch-cf .submissions table tbody td {
+  text-align: center;
+}
+
+/*# sourceMappingURL=Stud.css.map */

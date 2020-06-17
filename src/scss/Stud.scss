@@ -1,0 +1,69 @@
+$basic:lighten(#455667,30%);
+$secon:lighten(#abbccd,10%);
+$font-size:3vh;
+$background-color:#2545cf;
+$text-color:#fff;
+$bgOdd:#afbfcf;
+$bgEven:#8595af;
+
+.stud{
+    .view-stud{
+        table
+        {
+            width:100%;
+            border-collapse: collapse;
+            tr:nth-child(odd){
+                th{
+                    background-color: $basic;
+                }
+                td{
+                    background-color: $secon;
+                }
+            }
+            tr:nth-child(even){
+                td{
+                    background-color: $basic;
+                }
+                th{
+                    background-color: $secon;
+                }
+            }
+            tr{
+                font-size: $font-size;
+                th{
+                    width:50%;
+                }
+            }
+        }
+    }
+    .fetch-cf{
+        .submissions{
+            table{
+                width:100%;
+                border-collapse: collapse;
+                margin-top:2%;
+                thead
+                {
+                    tr{
+                        font-size: $font-size;
+                        background-color: $background-color;
+                    }
+                }
+                tbody{
+                    tr:nth-child(odd)
+                    {
+                        background-color: $bgOdd;
+                    }
+                    tr:nth-child(even)
+                    {
+                        background-color: $bgEven;
+                    }
+                    td{
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+    }
+}
