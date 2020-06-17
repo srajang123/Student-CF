@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 function Add({Name,Age,Gender,CF,RESET,New,SUBMIT}){
     return (

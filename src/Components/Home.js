@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 
 function App(){
     return(<h1>Students Data App</h1>)

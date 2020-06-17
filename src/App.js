@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import './App.css';
-import {Switch,Link,Route,BrowserRouter as Router} from 'react-router-dom';
+import {Switch,Route,BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios';
 
 import Home from './Components/Home';
@@ -60,7 +60,7 @@ function App() {
     RESET();
   }
   return (
-    <div class="test-app">
+    <div className="test-app">
       <Router>
         <Switch>
           <Route path='/add'><Add Name={editName} Age={editAge} Gender={editGender} CF={editCF} RESET={RESET} SUBMIT={SUBMIT} New={New} /></Route>
