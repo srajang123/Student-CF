@@ -65,7 +65,7 @@ function App() {
         <Switch>
           <Route path='/add'><Add Name={editName} Age={editAge} Gender={editGender} CF={editCF} RESET={RESET} SUBMIT={SUBMIT} New={New} /></Route>
           <Route path='/view'><View Data={studs} /></Route>
-          <Route path='/stud/'><Stud data={studs} /></Route>
+          <Route path='/stud/'><Stud Data={studs} /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </Router>
