@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-
+import '../styles/View.css';
 function View({Data}){
     useEffect(()=>{
         document.title='View Students';
