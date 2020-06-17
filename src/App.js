@@ -55,9 +55,12 @@ function App() {
     SetNew(data);
   }
   const SUBMIT = (e) => {
+    if(New.name!=='')
+    {
     axios.post('http://localhost:5000/add', New)
       .then(res => console.log(res))
       .catch(err => console.log(err));
+    }
     RESET();
   }
   return (
