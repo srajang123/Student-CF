@@ -1,0 +1,25 @@
+.form table {
+  border-collapse: collapse;
+  background-color: #90a6f0;
+  width: 60%;
+  margin: 5% auto;
+  border: solid 2px #15359f;
+}
+.form table tr th {
+  font-size: 4vh;
+}
+.form table tr td {
+  padding: 1% 0;
+}
+.form table tr td input, .form table tr td select {
+  font-size: 4vh;
+  padding-left: 1%;
+}
+.form table tr td input[type=button], .form table tr td input[type=reset] {
+  margin-left: 30%;
+}
+.form table tr td input[type=button], .form table tr td input[type=reset]:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Add.css.map */

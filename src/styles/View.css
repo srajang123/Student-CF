@@ -1,39 +1,39 @@
-table {
+.view table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
 }
-table thead tr {
+.view table thead tr {
   background-color: #2545cf;
   color: #fff;
   font-size: 3vh;
 }
-table thead tr th {
+.view table thead tr th {
   width: 5%;
   padding: 1% 0;
 }
-table thead tr th:nth-child(2) {
+.view table thead tr th:nth-child(2) {
   width: 20%;
 }
-table thead tr th:nth-child(4) {
+.view table thead tr th:nth-child(4) {
   width: 10%;
 }
-table thead tr th:nth-child(5) {
+.view table thead tr th:nth-child(5) {
   width: 20%;
 }
-table tbody tr:nth-child(even) {
+.view table tbody tr:nth-child(even) {
   background-color: #8595af;
 }
-table tbody tr:nth-child(odd) {
+.view table tbody tr:nth-child(odd) {
   background-color: #afbfcf;
 }
-table tbody tr td {
+.view table tbody tr td {
   font-size: 3vh;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
 }
-table tbody tr td a {
+.view table tbody tr td a {
   text-decoration: none;
   color: #f00;
 }

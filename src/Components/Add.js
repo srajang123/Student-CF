@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Add.css';
 
 function Add({Name,Age,Gender,CF,RESET,New,SUBMIT}){
     return (

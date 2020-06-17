@@ -2,47 +2,50 @@ $background-color:#2545cf;
 $text-color:#fff;
 $bgOdd:#afbfcf;
 $bgEven:#8595af;
-table
+.view
 {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width:100%;
-    thead{
-        tr{
-            background-color: $background-color;
-            color:$text-color;
-            font-size: 3vh;
-            th{
-                width:5%;
-                padding: 1% 0;
-            }
-            th:nth-child(2){
-                width: 20%;
-            }
-            th:nth-child(4){
-                width: 10%;
-            }
-            th:nth-child(5){
-                width:20%;
-            }
-        }
-    }
-    tbody{
-        tr:nth-child(even){
-            background-color: $bgEven;
-        }
-        tr:nth-child(odd){
-            background-color: $bgOdd;
-        }
-        tr{
-            td{
+    table
+    {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width:100%;
+        thead{
+            tr{
+                background-color: $background-color;
+                color:$text-color;
                 font-size: 3vh;
-                text-align: center;
-                padding-top:1%;
-                padding-bottom: 1%;
-                a{
-                text-decoration: none;
-                color: #f00;
+                th{
+                    width:5%;
+                    padding: 1% 0;
+                }
+                th:nth-child(2){
+                    width: 20%;
+                }
+                th:nth-child(4){
+                    width: 10%;
+                }
+                th:nth-child(5){
+                    width:20%;
+                }
+            }
+        }
+        tbody{
+            tr:nth-child(even){
+                background-color: $bgEven;
+            }
+            tr:nth-child(odd){
+                background-color: $bgOdd;
+            }
+            tr{
+                td{
+                    font-size: 3vh;
+                    text-align: center;
+                    padding-top:1%;
+                    padding-bottom: 1%;
+                    a{
+                    text-decoration: none;
+                    color: #f00;
+                    }
                 }
             }
         }

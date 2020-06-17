@@ -1,0 +1,31 @@
+$font-size: 4vh;
+$bgcolor: #15359f;
+.form{
+    table{
+        border-collapse: collapse;
+        background-color:lighten($bgcolor,40%);
+        width: 60%;
+        margin: 5% auto;
+        border: solid 2px $bgcolor;
+        tr{
+            th{
+                font-size: $font-size;
+            }
+            td{
+                padding: 1% 0;
+                input,select{
+                    font-size: $font-size;
+                    padding-left:1%;
+                }
+                input[type=button],input[type=reset]
+                {
+                    margin-left: 30%;
+                }
+                input[type=button],input[type=reset]:hover
+                {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
