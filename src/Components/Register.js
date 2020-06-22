@@ -16,7 +16,10 @@ function Register(){
         }
         axios.post('http://localhost:5000/register',data)
         .then(res=>{
-            console.log(res);
+            UNAME('');
+            PASS('');
+            NAME('');
+            CONTACT('');
         })
         .catch(err=>console.log('Error: '+err));
     }
