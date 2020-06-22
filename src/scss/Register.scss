@@ -1,0 +1,48 @@
+.register {
+    .register-form {
+        table {
+            border-collapse: collapse;
+            background-color: lighten(#ff4444, 20%);
+            margin: auto;
+            margin-top: 5%;
+            width: 40%;
+            line-height: 2;
+            tr {
+                td {
+                    label {
+                        font-size: 3.2vh;
+                        font-weight: 500;
+                        margin-left: 2%;
+                    }
+                    .input {
+                        width: 96%;
+                        height: 5vh;
+                        font-size: 3vh;
+                        padding-left: 3%;
+                        border-radius: 5px;
+                        border: solid 1px #f00;
+                        margin-left: 0.5%;
+                    }
+                    .btn {
+                        margin-left: 30%;
+                        width: 40%;
+                        border: none;
+                        color: #aa1111;
+                        font-size: 3vh;
+                        padding: 1% 0;
+                        margin: 2% 30%;
+                        box-sizing: border-box;
+                        transition-property: all;
+                        transition-duration: 500ms;
+                        transition-timing-function: linear;
+                    }
+                    .btn:hover {
+                        cursor: pointer;
+                        background-color: #aa1111;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

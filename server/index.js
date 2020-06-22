@@ -31,6 +31,12 @@ app.post('/add', cors(),(req,res,next)=>{
     .then()
     .catch(err=>console.log(err));
 });
+app.post('/register',cors(),(req,res,next)=>{
+    let data=req.body;
+    db.collection('users').insertOne(data)
+    .then()
+    .catch(err=>console.log('Error: '+err));
+});
 mongoConnect(() => {
     db = getDb();
     app.listen(PORT, () => console.log(`Server Up and running at ${PORT}`));

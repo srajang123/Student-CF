@@ -9,6 +9,7 @@ import View from './Components/View';
 import Stud from './Components/Stud';
 import Header from './Components/Header';
 import Login from './Components/Login';
+import Register from './Components/Register';
 function App() {
   const [studs, setStud] = useState([]);
   const [New, setNew] = useState({
@@ -66,12 +67,13 @@ function App() {
   return (
     <div className="test-app">
       <Header/>
-      <Login/>
       <Router>
         <Switch>
           <Route exact path='/add'><Add Addr='/add' Name={editName} Age={editAge} Gender={editGender} CF={editCF} RESET={RESET} SUBMIT={SUBMIT} New={New} /></Route>
           <Route path='/view'><View Data={studs} Addr='/view' /></Route>
           <Route path='/stud/'><Stud Data={studs}  Addr='/stud' /></Route>
+          <Route path="/login"><Login/></Route>
+          <Route path="/register"><Register/></Route>
           <Route path='/'><Home Addr='/'/></Route>
         </Switch>
       </Router>

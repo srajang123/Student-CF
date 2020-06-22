@@ -10,7 +10,7 @@ function Header(){
     return (
         <div className='header'>
             <h1>Student Data App</h1>
-            <span class="links">
+            <span className="links">
                 <a href="/" className={Addr==='/'?c2:c1}>Home</a>
                 <a href="/View" className={Addr === '/View' ? c2 : c1}>View Students</a>
                 <a href="/Add" className={Addr === '/Add' ? c2 : c1}>Add Students</a>
