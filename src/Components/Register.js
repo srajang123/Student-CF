@@ -8,7 +8,13 @@ function Register(){
     const [contact,Contact]=useState('');
     const SUBMIT=e=>{
         e.preventDefault();
-        axios.post('http://localhost:5000/register')
+        let data={
+            name:name,
+            uname:uname,
+            contact:contact,
+            pass:pass
+        }
+        axios.post('http://localhost:5000/register',data)
         .then(res=>{
             console.log(res);
         })
