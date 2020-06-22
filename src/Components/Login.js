@@ -21,19 +21,19 @@ function Login(){
                             <td>
                                 <label>Name</label>
                                 <br/>
-                                <input type="text" placeholder="Username" class="input" value={uname} onChange={UNAME}/>
+                                <input type="text" placeholder="Username" className="input" value={uname} onChange={UNAME}/>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label>Password</label>
                                 <br/>
-                                <input type="password" placeholder="Password" class="input" value={pass} onChange={PASS}/>
+                                <input type="password" placeholder="Password" className="input" value={pass} onChange={PASS}/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="submit" value="LOGIN" class="btn"/>
+                                <input type="submit" value="LOGIN" className="btn"/>
                             </td>
                         </tr>
                     </table>
