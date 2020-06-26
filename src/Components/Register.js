@@ -7,6 +7,7 @@ function Register(){
     const [name,Name]=useState('');
     const [contact,Contact]=useState('');
     const SUBMIT=e=>{
+        console.log('Submitted');
         e.preventDefault();
         let data={
             name:name,
@@ -14,12 +15,13 @@ function Register(){
             contact:contact,
             pass:pass
         }
-        axios.post('http://localhost:5000/register',data)
+        axios.post('/register',data)
         .then(res=>{
-            UNAME('');
-            PASS('');
-            NAME('');
-            CONTACT('');
+            console.log('Clearing');
+            Uname('');
+            Pass('');
+            Name('');
+            Contact('');
         })
         .catch(err=>console.log('Error: '+err));
     }
